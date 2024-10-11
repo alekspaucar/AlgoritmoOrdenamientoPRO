@@ -43,23 +43,22 @@ public class App {
                         System.out.println("- Array Ordenado por metodo Burbuja es: " + Arrays.toString(arrayOrd));
                     }
                     break;
-            //CASO 2: NO TERMINADO   (BORRAR EL COMENTARIO DESPUES DE HACERLO)
+            //CASO 2: TERMINADO   (este es el metodo burbuja con ajuste que faltaba )
             case 2:
                 System.out.println("*****Burbuja Compleja:*****");
                 System.out.println("Imprimir de forma (Escribe el numero segun la lista )");
                 System.out.println("-1. Ascendente        -2.Descendente ");
                 alternar = leer.nextInt();
-                    if (alternar == 1){
-                        cambio = true;
-                        int[] arrayOrd = ordenar.burbujaOrdenamiento(array, cambio);
-                        System.out.println("- Array Ordenado por metodo Burbuja es: " + Arrays.toString(arrayOrd));
-                        
-                    } else {
-                        cambio = false;
-                        int[] arrayOrd = ordenar.burbujaOrdenamiento(array, cambio);
-
-                    }
-                    break;
+                if (alternar == 1) {
+                    cambio = true;
+                    int[] arrayOrd = ordenar.burbujaComplejaOrdenamiento(array, cambio);
+                    System.out.println("- Array Ordenado por metodo Burbuja Compleja es: " + Arrays.toString(arrayOrd));
+                } else {
+                    cambio = false;
+                    int[] arrayOrd = ordenar.burbujaComplejaOrdenamiento(array, cambio);
+                    System.out.println("- Array Ordenado por metodo Burbuja Compleja es: " + Arrays.toString(arrayOrd));
+                }
+                break;
             case 3:
                 System.out.println("*****Ordenamiento por seleccion:*****");
                 System.out.println("Imprimir de forma (Escribe el numero segun la lista )");

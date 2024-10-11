@@ -91,6 +91,27 @@ public class MetodosOrdenamiento {
 
         }
     }
+    public int[] burbujaComplejaOrdenamiento(int[] array, boolean ascendente) {
+        int n = array.length;
+        boolean intercambio;
+        for (int i = 0; i < n - 1; i++) {
+            intercambio = false;
+            for (int j = 0; j < n - 1 - i; j++) {
+                if (ascendente ? (array[j] > array[j + 1]) : (array[j] < array[j + 1])) {
+                    int temp = array[j];
+                    array[j] = array[j + 1];
+                    array[j + 1] = temp;
+                    intercambio = true;
+                }
+            }
+            if (!intercambio) {
+                break;
+            }
+        }
+        return array;
+    }
+    
+
 } 
             
         
