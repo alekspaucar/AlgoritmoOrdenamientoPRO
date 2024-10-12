@@ -43,7 +43,7 @@ public class App {
                         System.out.println("- Array Ordenado por metodo Burbuja es: " + Arrays.toString(arrayOrd));
                     }
                     break;
-            //CASO 2: TERMINADO   (este es el metodo burbuja con ajuste que faltaba )
+            //CASO 2: TERMINADO   (este es el metodo burbuja con ajuste que falta )
             case 2:
                 System.out.println("*****Burbuja Compleja:*****");
                 System.out.println("Imprimir de forma (Escribe el numero segun la lista )");
