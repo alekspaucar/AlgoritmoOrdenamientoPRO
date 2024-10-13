@@ -1,6 +1,16 @@
 import java.util.Arrays;
 public class MetodosOrdenamiento {
+
+
+//pasar el parametro mostrarPasos en cada llamada a los métodos de ordenamiento
+
+
     public int[] burbujaOrdenamiento(int[] array , boolean cambio){
+            /*
+            *       if (mostrarPasos) {
+            *           System.out.println("Iteración " + (i + 1) + ": " + Arrays.toString(arregloOrdenado));
+            *        }
+            */
         int[] arregloOrdenado = Arrays.copyOf(array, array.length);
         if (cambio == true){
             for(int i = 0; i < arregloOrdenado.length;i++){
@@ -28,6 +38,10 @@ public class MetodosOrdenamiento {
 
     }
     public int[] seleccionOrdenamiento(int[] array, boolean cambio) {
+            /*      if (mostrarPasos) {
+            *          System.out.println("Iteración " + (i + 1) + ": " + Arrays.toString(arregloOrdenado));
+            *    }
+            */
         int[] arregloOrdenado = Arrays.copyOf(array, array.length);
         if (cambio == true){
             for (int i = 0; i < arregloOrdenado.length - 1; i++) {
@@ -61,7 +75,10 @@ public class MetodosOrdenamiento {
 
     }
     public int[] insercionOrdenamiento(int[] array, boolean cambio) {
-
+            /*      if (mostrarPasos) {
+             *           System.out.println("Iteración " + (i + 1) + ": " + Arrays.toString(arregloOrdenado));
+             *    } 
+             */
         int[] arregloOrdenado = Arrays.copyOf(array, array.length);
         if (cambio == true){
             for (int j = 1; j < arregloOrdenado.length; j++) {
@@ -90,7 +107,12 @@ public class MetodosOrdenamiento {
             return arregloOrdenado;
 
         }
-    }public int[] burbujaComplejaOrdenamiento(int[] array, boolean ascendente) {
+    }
+    public int[] burbujaComplejaOrdenamiento(int[] array, boolean ascendente) {
+            /*      if (mostrarPasos) {
+             *           System.out.println("Iteración " + j + ": " + Arrays.toString(arregloOrdenado));
+             *   }
+             */
         int n = array.length;
         boolean intercambio;
         for (int i = 0; i < n - 1; i++) {

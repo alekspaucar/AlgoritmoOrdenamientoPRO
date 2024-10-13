@@ -44,6 +44,8 @@ public class App {
                     }
                     break;
             //CASO 2: TERMINADO   (este es el metodo burbuja con ajuste que falta )
+
+
             case 2:
                 System.out.println("*****Burbuja Compleja:*****");
                 System.out.println("Imprimir de forma (Escribe el numero segun la lista )");
@@ -60,6 +62,7 @@ public class App {
                 }
                 break;
             case 3:
+
                 System.out.println("*****Ordenamiento por seleccion:*****");
                 System.out.println("Imprimir de forma (Escribe el numero segun la lista )");
                 System.out.println("-1. Ascendente        -2.Descendente ");
@@ -77,6 +80,8 @@ public class App {
                     }
                     break;
             case 4:
+            
+
                 System.out.println("*****Ordenamiento por insercion:*****");
                 System.out.println("Imprimir de forma (Escribe el numero segun la lista )");
                 System.out.println("-1. Ascendente        -2.Descendente ");
@@ -89,6 +94,7 @@ public class App {
                     } else {
                         cambio = false;
                         int[] arrayOrd = ordenar.insercionOrdenamiento(array, cambio);
+                        
                         System.out.println("- Array Ordenado por metodo Burbuja es: " + Arrays.toString(arrayOrd));
 
                     }
@@ -99,3 +105,6 @@ public class App {
         }
     }
 }
+
+
+
